@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ali</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: pop 1s ease;
+        }
+
+        p {
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .icons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 2rem;
+        }
+
+        .icons img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .icons img:hover {
+            transform: scale(1.1) rotate(-2deg);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-image {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pop {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Learn with me about HTML CSS JavaScript</h1>
+    <p>Programming with Muhammad Ali</p>
+    <div class="icons">
+        <img src="Sublime.jpg" alt="SublimeText">
+        <img src="VisualStudio.jpg" alt="Visual Studio">
+        <img src="GitHub.jpg" alt="GitHub">
+    </div>
+    <p>Hej! Jag heter Muhammad Ali och läser webbutveckling på NTI Gymnasiet Helsingborg. Jag har lärt mig HTML, CSS, JavaScript Här ovanför kan ni se vilka program jag har använt mig av
+        <img src="SublimeText.jpg" width="100px"> 
+    </p>
+    
+</body>
+</html>
+
